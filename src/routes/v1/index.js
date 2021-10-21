@@ -2,6 +2,10 @@ const express = require('express');
 const authRoute = require('./auth.route');
 const userRoute = require('./user.route');
 const sinhvienRoute = require('./sinhvien.route');
+const peopleRoute = require('./people.route');
+const professionalRoute = require('./professional.route');
+const worksRoute = require('./works.route');
+const companiesRoute = require('./companies.route');
 const docsRoute = require('./docs.route');
 const config = require('../../config/config');
 
@@ -19,6 +23,22 @@ const defaultRoutes = [
   {
     path: '/sinhvien',
     route: sinhvienRoute,
+  },
+  {
+    path: '/people',
+    route: peopleRoute,
+  },
+  {
+    path: '/professional',
+    route: professionalRoute,
+  },
+  {
+    path: '/works',
+    route: worksRoute,
+  },
+  {
+    path: '/companies',
+    route: companiesRoute,
   },
 ];
 
